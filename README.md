@@ -18,6 +18,8 @@ Les options prévues sont:
     -Barre d'outils entièrement personnalisables (sous forme de barres de tâche, boutons, etc...
 
     -Option Co-Working pour la version web
+    
+    -Gestion de fiches (personnages, lieux, objets, autres)
 
 Et voilà, je crois que j'ai rien oublié, si vous avez des questions ou des suggestions n'hésitez pas à me les donner.
 
