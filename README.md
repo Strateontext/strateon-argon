@@ -3,7 +3,8 @@ Les options prévues sont:
 
     -Options normales d'un éditeur de texte
 
-    -Coloration syntaxique pour différents languages de programmation et pour différentes langues (français, anglais et allemand prévus)
+    -Coloration syntaxique pour différents languages de programmation et pour différentes langues 
+    (français, anglais et allemand prévus)
 
     -Fenêtre de visualisation de code html/css
 
