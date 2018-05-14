@@ -25,5 +25,11 @@ Et voilà, je crois que j'ai rien oublié, si vous avez des questions ou des sug
 
 J'espère que ce projet vous plaira.
 
+Premier aperçu du navigateur :
 
-![img1](https://user-images.githubusercontent.com/39223380/39987030-0efd4466-5753-11e8-9e1a-a3798572de97.png)
+    -![img1](https://user-images.githubusercontent.com/39223380/39987030-0efd4466-5753-11e8-9e1a-a3798572de97.png)
+
+Avec le menu :
+
+    -![img2](https://user-images.githubusercontent.com/39223380/39987074-2c1b58c6-5753-11e8-86e8-a51ac05d1d42.png)
+
