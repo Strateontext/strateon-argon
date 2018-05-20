@@ -7,8 +7,10 @@ class FenPrincipale : public QMainWindow
 {
     public:
     FenPrincipale();
+    void NouvelleFen();
 
     private:
+    QMdiArea* m_zoneCentrale;
 
 };
 

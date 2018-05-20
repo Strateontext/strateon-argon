@@ -2,7 +2,7 @@ QT += widgets
 
 SOURCES += \
     main.cpp \
-    fenprincipale.cpp \
+    fenprincipale.cpp
 
 HEADERS += \
     fenprincipale.h

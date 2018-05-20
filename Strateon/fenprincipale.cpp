@@ -3,15 +3,20 @@
 
 
 
-void NouvelleFen() {
-    QTextEdit *zoneTexte1 = new QTextEdit;    // ...
+void FenPrincipale::NouvelleFen() {
+
+    QTextEdit *zoneTexte = new QTextEdit;
+    QMdiSubWindow *sousFenetre = m_zoneCentrale->addSubWindow(zoneTexte);
 
 }
 
 
 
+
 FenPrincipale::FenPrincipale()
 {
+
+    m_zoneCentrale = new QMdiArea(this);
 
 
     //Création des pages de texte
@@ -24,12 +29,35 @@ FenPrincipale::FenPrincipale()
     //Création du menu
     QMenu *a = menuBar()->addMenu("Fichier");
 
-    QAction *actionQuitter = a->addAction("&Quitter");
-    actionQuitter->setShortcut(QKeySequence("Ctrl+Q"));
-    a->addAction(actionQuitter);
+
+    //Nouvelle action
+
+    QAction *actionNouv = a->addAction("Nouvelle fenêtre");
+    actionNouv->setShortcut(QKeySequence("Ctrl+N"));
+    a->addAction(actionNouv);
 
 
-    connect(actionQuitter, SIGNAL(triggered()), qApp, SLOT(quit()));
+    connect(actionNouv, &QAction::triggered, this, &FenPrincipale::NouvelleFen);
+
+    //--------------------------------------------------------------------------
+
+
+    QAction *actionTest = a->addAction("Nouveau test");
+    actionTest->setShortcut(QKeySequence("Ctrl+T"));
+    a->addAction(actionTest);
+
+
+    connect(actionTest, SIGNAL(triggered()), qApp, SLOT(NouvelleFen()));
+
+    //--------------------------------------------------------------------------
+
+    QAction *actionLeave = a->addAction("Fermer");
+    actionLeave->setShortcut(QKeySequence("Ctrl+Q"));
+    a->addAction(actionLeave);
+
+
+    connect(actionLeave, SIGNAL(triggered()), qApp, SLOT(quit()));
+
 
 
         QMenu *Nouveau = a->addMenu("Nouveau");
@@ -40,7 +68,7 @@ FenPrincipale::FenPrincipale()
         QMenu *Ouvrir = a->addMenu("Ouvrir...");
         QMenu *Récent = a->addMenu("Récent");
         QMenu *Partager = a->addMenu("Partager");
-        QMenu *Fermer = a->addMenu("Fermer");
+
 
 
     //-------------------------------------------------------------------------//
@@ -57,7 +85,9 @@ FenPrincipale::FenPrincipale()
 
     //Création de la toolbar
     QToolBar *toolBarFichier = addToolBar("Fichier");
-    toolBarFichier->addAction(actionQuitter);
+
+    toolBarFichier->addAction(actionNouv);
+
     setUnifiedTitleAndToolBarOnMac(true);
     QFontComboBox *choixPolice = new QFontComboBox;
     toolBarFichier->addWidget(choixPolice);
