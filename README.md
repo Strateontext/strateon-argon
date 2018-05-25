@@ -34,3 +34,6 @@ Avec le menu :
 
 ![img2](https://user-images.githubusercontent.com/39223380/39987074-2c1b58c6-5753-11e8-86e8-a51ac05d1d42.png)
 
+Les premières fonctionnalités :
+
+![test](https://user-images.githubusercontent.com/39223380/40561016-f6134cc2-605b-11e8-9625-2edeb3cbcd23.gif)
