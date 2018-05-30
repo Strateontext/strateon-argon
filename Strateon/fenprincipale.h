@@ -11,6 +11,11 @@ class FenPrincipale : public QMainWindow
     void mettreEnGras();
     void mettreEnNormal();
     void changer_couleur();
+    void mettreEnSouligné();
+    void mettreEnItalique();
+    void GestionTaille();
+    void SelectSizeButton();
+    void ouvrir();
 
 
 
