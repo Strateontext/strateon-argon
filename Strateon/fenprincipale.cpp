@@ -51,10 +51,33 @@ FenPrincipale::FenPrincipale()
     actionColor->setShortcut(QKeySequence(""));
     File->addAction(actionColor);
 
+    QAction *actionItalique = File->addAction("Mettre en italique");
+    actionItalique->setShortcut(QKeySequence(""));
+    File->addAction(actionItalique);
 
+    QAction *actionsouligné = File->addAction("Mettre en souligné");
+    actionsouligné->setShortcut(QKeySequence(""));
+    File->addAction(actionsouligné);
+
+    QAction *actionTaille = File->addAction("Choisir la taille");
+    actionTaille->setShortcut(QKeySequence(""));
+    File->addAction(actionTaille);
+
+    QAction *actionOpen = File->addAction("Ouvrir");
+    actionOpen->setShortcut(QKeySequence(""));
+    File->addAction(actionOpen);
+
+
+
+
+
+    connect(actionTaille, &QAction::triggered, this, &FenPrincipale::GestionTaille);
     connect(actionGras, &QAction::triggered, this, &FenPrincipale::mettreEnGras);
     connect(actionNormal, &QAction::triggered, this, &FenPrincipale::mettreEnNormal);
     connect(actionColor, &QAction::triggered, this, &FenPrincipale::changer_couleur);
+    connect(actionItalique, &QAction::triggered, this, &FenPrincipale::mettreEnItalique);
+    connect(actionsouligné, &QAction::triggered, this, &FenPrincipale::mettreEnSouligné);
+    connect(actionOpen, &QAction::triggered, this, &FenPrincipale::ouvrir);
 
 
     connect(actionNouv, &QAction::triggered, this, &FenPrincipale::SecondWindow);
@@ -117,17 +140,20 @@ FenPrincipale::FenPrincipale()
 }
 
 
-void FenPrincipale::SavingText() {
 
+void FenPrincipale::SavingText()
+    {
+        QString texteEnHtml = TextWindow->toHtml(); 
+        QString nomFichier = QFileDialog::getSaveFileName(this, "Enregistrer...", "Sans titre 1.txt"); 
 
-    QString textsave = TextWindow->toHtml();
-    QString chemin = "/Users/LaurentBESSEL/Desktop/text.html";
-    QFile fichier(chemin);
-    fichier.open(QIODevice::WriteOnly | QIODevice::Text);
-    QTextStream flux(&fichier);
-    flux << textsave;
-    fichier.close();
-}
+        QFile fichier(nomFichier); 
+
+        if (fichier.open(QIODevice::WriteOnly))
+        {
+            QTextStream out(&fichier);
+            out << texteEnHtml; 
+        }
+    }
 
 void FenPrincipale::mettreEnGras()
 {
@@ -141,9 +167,63 @@ void FenPrincipale::mettreEnNormal()
    TextWindow->setFontWeight(QFont::Normal);
 }
 
+void FenPrincipale::mettreEnSouligné()
+{
+
+   TextWindow->setFontUnderline(QFont::Normal);
+
+}
+
+void FenPrincipale::mettreEnItalique()
+{
+
+   TextWindow->setFontItalic(QFont::Normal);
+}
+
+void FenPrincipale::GestionTaille()
+{
+
+   TextWindow->setFontWeight(QFont::Normal);
+
+
+   QTextEdit *bigEditor = new QTextEdit;
+       bigEditor->setPlainText(tr("This widget takes up all the remaining space "
+                                  "in the top-level layout."));
+       bigEditor->show();
+   QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+   connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
+   connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
+   buttonBox->show();
+
+
+
+}
+void FenPrincipale::SelectSizeButton()
+{
+
+
+}
+
+
+
 void FenPrincipale::changer_couleur()
 {
-    QColor couleur = QColorDialog::getColor(Qt::white, this); // Ici ta variable va donc stocker la réponse du dialogue qui renverra un QColor
+    QColor couleur = QColorDialog::getColor(Qt::white, this);
 
-    TextWindow->setTextColor(couleur); // Lequel nous passons à la fonction setTextColor qui définit la couleur du texte
+    TextWindow->setTextColor(couleur); 
+}
+
+void FenPrincipale::ouvrir()
+{
+
+    SecondWindow();
+    QString nomFichier = QFileDialog::getOpenFileName(this, "Ouvrir un fichier", QString()); 
+
+    QFile fichier(nomFichier);
+    if (fichier.open(QIODevice::ReadOnly)) 
+    {
+        TextWindow->setText(fichier.readAll()); 
+
+        setWindowTitle(nomFichier + " - Mon petit éditeur de texte !"); 
+    }
 }
