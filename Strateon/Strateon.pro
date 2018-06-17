@@ -9,9 +9,11 @@ SOURCES += \
     principalwindow.cpp \
     toolbar.cpp \
     menubar.cpp \
-    navigator.cpp
+    navigator.cpp \
+    syntaxic_coloration.cpp
 
 HEADERS += \
-    principalwindow.h
+    principalwindow.h \
+    syntaxic.h
 
 FORMS +=

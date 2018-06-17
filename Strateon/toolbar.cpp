@@ -1,14 +1,16 @@
 #include "principalwindow.h"
 #include <iostream>
 #include <QWebEngineView>
+#include <qframe.h>
 
 void FenPrincipale::ToolBarCreate() {
 
+    //Toolbar Creating
 
-    //Création de la toolbar
     toolBar = addToolBar("ToolBar");
 
     //ToolBar Widgets
+
     ButtonWindow = new QPushButton("", this);
     ButtonQuit = new QPushButton("", this);
     ButtonSave = new QPushButton("", this);
@@ -24,14 +26,22 @@ void FenPrincipale::ToolBarCreate() {
     UrlLoad = new QPushButton("URL Load", this);
     PoliceChoice = new QFontComboBox;
     progression = new QProgressBar;
+    sizeslider = new QSlider(Qt::Horizontal);
+    sizeslider->setMinimumWidth(70);
+    sizeslider->setMaximumWidth(70);
+    sizeslider->setMaximum(100);
+    slider = new QSlider(Qt::Horizontal);
+    slider->setMinimumWidth(200);
+    slider->setMaximumWidth(200);
+    slider->setMaximum(200);
 
-    statusBar()->addWidget(progression);
     toolBar->addWidget(PoliceChoice);
     toolBar->addWidget(ButtonNorm);
     toolBar->addWidget(ButtonGras);
     toolBar->addWidget(ButtonItal);
     toolBar->addWidget(ButtonSoul);
     toolBar->addWidget(ButtonSize);
+    toolBar->addWidget(sizeslider);
     toolBar->addWidget(ButtonColor);
     toolBar->addWidget(ButtonWindow);
     toolBar->addWidget(ButtonQuit);
@@ -41,6 +51,11 @@ void FenPrincipale::ToolBarCreate() {
     toolBar->addWidget(Buttonhtmlview);
     toolBar->addWidget(UrlLoad);
 
+    statusBar()->addWidget(progression);
+    statusBar()->addWidget(slider);
+
+    connect(slider, &QSlider::valueChanged, this, &FenPrincipale::OpacitySlider);
+    connect(sizeslider, &QSlider::valueChanged, this, &FenPrincipale::GestionTaille);
     connect(UrlLoad, &QPushButton::clicked, this, &FenPrincipale::SetUrl);
     connect(Buttonhtmlview, &QPushButton::clicked, this, &FenPrincipale::openhtml);
     connect(ButtonRenderWindow, &QPushButton::clicked, this, &FenPrincipale::RenderWindow);
@@ -53,7 +68,6 @@ void FenPrincipale::ToolBarCreate() {
     connect(ButtonColor, &QPushButton::clicked, this, &FenPrincipale::changer_couleur);
     connect(ButtonItal, &QPushButton::clicked, this, &FenPrincipale::mettreEnItalique);
     connect(ButtonSoul, &QPushButton::clicked, this, &FenPrincipale::mettreEnSouligné);
-    connect(ButtonSize, &QPushButton::clicked, this, &FenPrincipale::GestionTaille);
-
 
 }
+

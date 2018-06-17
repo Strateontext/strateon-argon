@@ -5,6 +5,7 @@
 
 
 
+
 FenPrincipale::FenPrincipale()
 {
 
@@ -14,6 +15,8 @@ FenPrincipale::FenPrincipale()
 
     //Création des pages de texte
     CentralZone = new QMdiArea;
+
+
 
 
 
@@ -76,9 +79,12 @@ FenPrincipale::FenPrincipale()
     progression->setMinimumHeight(20);
 
 
+    /*m_fButton = new FloatingButton();
+    QMdiSubWindow *SubWindowMake = CentralZone->addSubWindow(m_fButton);
+    m_fButton->show();*/
 
-
-
+    QImage img("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/background.png");
+    CentralZone->setBackground(QBrush(img));
 
     setCentralWidget(CentralZone);
     setUnifiedTitleAndToolBarOnMac(true);

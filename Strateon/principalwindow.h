@@ -2,8 +2,11 @@
 #define HEADER_FENPRINCIPALE
 #include <QtWidgets>
 #include <QWebEngineView>
-
-
+#include <QSyntaxHighlighter>
+#include <QHash>
+#include <QTextCharFormat>
+#include "syntaxic.h"
+#include "floatbutton.h"
 
 class FenPrincipale : public QMainWindow
 {
@@ -16,7 +19,7 @@ class FenPrincipale : public QMainWindow
     void changer_couleur();
     void mettreEnSouligné();
     void mettreEnItalique();
-    void GestionTaille();
+    //void GestionTaille();
     void ouvrir();
     void fontChanged();
     void RenderWindow();
@@ -24,12 +27,13 @@ class FenPrincipale : public QMainWindow
     void SetUrl();
     void ToolBarCreate();
     void MenuFuction();
-
-
+    void OpacitySlider(int);
+    void GestionTaille(int);
 
     private:
-    QToolBar *toolBar;
     QMdiArea* CentralZone;
+    QToolBar *toolBar; 
+    QMdiSubWindow *SubWindowMake;
     QString *textsave;
     QTextEdit *TextWindow;
     QFontComboBox *PoliceChoice;
@@ -61,8 +65,11 @@ class FenPrincipale : public QMainWindow
     QPushButton *Buttonhtmlview;
     QPushButton *UrlLoad;
     QProgressBar *progression;
-
+    Highlighter *highlighter;
+    QSlider *slider;
+    QSlider *sizeslider;
 
 };
+
 
 #endif

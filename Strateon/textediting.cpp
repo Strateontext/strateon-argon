@@ -4,53 +4,35 @@
 
 void FenPrincipale::BoldSet()
 {
-
    TextWindow->setFontWeight(QFont::Bold);
 }
 
 void FenPrincipale::NormalSet()
 {
-
    TextWindow->setFontWeight(QFont::Normal);
    TextWindow->setTextColor(Qt::black);
-
+   TextWindow->setFontUnderline(0);
+   TextWindow->setFontItalic(0);
 }
 
 void FenPrincipale::mettreEnSouligné()
 {
-
-   TextWindow->setFontUnderline(QFont::Normal);
-
+   TextWindow->setFontUnderline(1);
 }
 
 void FenPrincipale::mettreEnItalique()
 {
-
-   TextWindow->setFontItalic(QFont::Normal);
+   TextWindow->setFontItalic(1);
 }
 
-void FenPrincipale::GestionTaille()
+void FenPrincipale::GestionTaille(int textsize)
 {
-
    TextWindow->setFontWeight(QFont::Normal);
-
-
-   QTextEdit *bigEditor = new QTextEdit;
-       bigEditor->setPlainText(tr("This widget takes up all the remaining space "
-                                  "in the top-level layout."));
-       bigEditor->show();
-   QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
-   connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
-   connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
-   buttonBox->show();
-
-
-
+   TextWindow->setFontPointSize(textsize);
 }
 
 void FenPrincipale::changer_couleur()
 {
     QColor couleur = QColorDialog::getColor(Qt::white, this);
-
     TextWindow->setTextColor(couleur);
 }

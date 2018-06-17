@@ -3,7 +3,7 @@
 #include "principalwindow.h"
 #include <iostream>
 #include <QWebEngineView>
-
+#include "floatbutton.h"
 
 
 
@@ -25,9 +25,12 @@ QString readFile(const QString& filename)
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-
     FenPrincipale fenetre;
-    fenetre.setWindowTitle("Straeon V1-(Argon)");
+    fenetre.setWindowTitle("Strateon V1-(Argon)");
+    fenetre.resize(1600,900);
+    fenetre.setMinimumSize(1000,562.5);
+    fenetre.setMaximumSize(1920,1080);
+
     fenetre.show();
 
     app.setStyleSheet(readFile(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/style.css"));
