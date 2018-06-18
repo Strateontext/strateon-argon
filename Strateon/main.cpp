@@ -3,8 +3,6 @@
 #include "principalwindow.h"
 #include <iostream>
 #include <QWebEngineView>
-#include "floatbutton.h"
-
 
 
 QString readFile(const QString& filename)

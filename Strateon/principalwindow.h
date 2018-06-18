@@ -6,7 +6,7 @@
 #include <QHash>
 #include <QTextCharFormat>
 #include "syntaxic.h"
-#include "floatbutton.h"
+
 
 class FenPrincipale : public QMainWindow
 {
