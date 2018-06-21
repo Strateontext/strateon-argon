@@ -1,0 +1,8 @@
+c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication11\WindowsFormsApplication11\bin\Release\WindowsFormsApplication11.exe.config
+c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication11\WindowsFormsApplication11\bin\Release\WindowsFormsApplication11.exe
+c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication11\WindowsFormsApplication11\bin\Release\WindowsFormsApplication11.pdb
+c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\Release\WindowsFormsApplication11.Form1.resources
+c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\Release\WindowsFormsApplication11.Properties.Resources.resources
+c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\Release\WindowsFormsApplication11.csproj.GenerateResource.Cache
+c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\Release\WindowsFormsApplication11.exe
+c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication11\WindowsFormsApplication11\obj\Release\WindowsFormsApplication11.pdb
