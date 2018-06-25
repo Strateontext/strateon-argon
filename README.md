@@ -37,3 +37,7 @@ Avec le menu :
 Les premières fonctionnalités :
 
 ![test](https://user-images.githubusercontent.com/39223380/40561016-f6134cc2-605b-11e8-9625-2edeb3cbcd23.gif)
+
+
+
+La dernière version pour Windows : https://drive.google.com/open?id=159Ke6IfKn7jelx5l9vzEpbf3Zzlak2Hu
