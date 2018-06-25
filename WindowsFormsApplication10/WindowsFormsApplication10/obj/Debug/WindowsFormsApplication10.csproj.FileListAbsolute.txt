@@ -1,8 +1,0 @@
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication10\WindowsFormsApplication10\bin\Debug\WindowsFormsApplication10.exe.config
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication10\WindowsFormsApplication10\bin\Debug\WindowsFormsApplication10.exe
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication10\WindowsFormsApplication10\bin\Debug\WindowsFormsApplication10.pdb
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication10\WindowsFormsApplication10\obj\Debug\WindowsFormsApplication10.Form1.resources
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication10\WindowsFormsApplication10\obj\Debug\WindowsFormsApplication10.Properties.Resources.resources
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication10\WindowsFormsApplication10\obj\Debug\WindowsFormsApplication10.csproj.GenerateResource.Cache
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication10\WindowsFormsApplication10\obj\Debug\WindowsFormsApplication10.exe
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication10\WindowsFormsApplication10\obj\Debug\WindowsFormsApplication10.pdb
