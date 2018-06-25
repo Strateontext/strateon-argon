@@ -1,9 +1,0 @@
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication14\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.exe.config
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication14\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.exe
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication14\WindowsFormsApplication14\bin\Debug\WindowsFormsApplication14.pdb
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication14\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.csprojResolveAssemblyReference.cache
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication14\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.Properties.Resources.resources
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication14\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.csproj.GenerateResource.Cache
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication14\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.exe
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication14\WindowsFormsApplication14\obj\Debug\WindowsFormsApplication14.pdb
-c:\users\a.schaub\documents\visual studio 2015\Projects\WindowsFormsApplication14\WindowsFormsApplication14\obj\Debug\KeyboardInputForm.Form1.resources
