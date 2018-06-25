@@ -23,3 +23,5 @@
 So, I hope that I don't forgot somethink, if you want to ask me some questions or to post suggestions, don't hesitate to give me them.
 Ih hope that you will enjoy this project.
 More photographies in the FR README.
+
+The last Windows version here : https://drive.google.com/open?id=159Ke6IfKn7jelx5l9vzEpbf3Zzlak2Hu
