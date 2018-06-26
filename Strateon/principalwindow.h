@@ -17,7 +17,7 @@ class FenPrincipale : public QMainWindow
     void BoldSet();
     void NormalSet();
     void changer_couleur();
-    void mettreEnSouligné();
+    void mettreEnSouligne();
     void mettreEnItalique();
     //void GestionTaille();
     void ouvrir();
