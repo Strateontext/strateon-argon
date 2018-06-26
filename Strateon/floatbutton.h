@@ -1,4 +1,0 @@
-#ifndef FLOATBUTTON_H
-#define FLOATBUTTON_H
-
-#endif // FLOATBUTTON_H
