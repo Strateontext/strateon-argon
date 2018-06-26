@@ -40,4 +40,4 @@ Les premières fonctionnalités :
 
 
 
-La dernière version pour Windows : https://drive.google.com/open?id=159Ke6IfKn7jelx5l9vzEpbf3Zzlak2Hu
+La dernière version pour Windows : http://www.mediafire.com/file/hw6299a109u4ks6/windows.zip
