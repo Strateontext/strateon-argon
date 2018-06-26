@@ -17,3 +17,6 @@ HEADERS += \
     syntaxic.h
 
 FORMS +=
+
+RESOURCES += \
+    ressource.qrc

@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="background">icons/background.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file alias="bold">icons/bold.png</file>
+        <file alias="browsewin">icons/browsewin.png</file>
+        <file alias="close">icons/close.png</file>
+        <file alias="htmlopen">icons/htmlopen.png</file>
+        <file alias="italic">icons/italic.png</file>
+        <file alias="newwin">icons/newwin.png</file>
+        <file alias="normal">icons/normal.png</file>
+        <file alias="open">icons/open.png</file>
+        <file alias="save">icons/save.png</file>
+        <file alias="size">icons/size.png</file>
+        <file alias="underline">icons/underline.png</file>
+        <file alias="urlopen">icons/urlopen.png</file>
+    </qresource>
+    <qresource prefix="/files">
+        <file alias="style">style.css</file>
+    </qresource>
+</RCC>
