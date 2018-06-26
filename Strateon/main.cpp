@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
     fenetre.show();
 
-    app.setStyleSheet(readFile(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/style.css"));
+    app.setStyleSheet(readFile(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "style.css"));
 
     return app.exec();
 }
