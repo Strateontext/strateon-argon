@@ -67,7 +67,7 @@ void FenPrincipale::ToolBarCreate() {
     connect(ButtonNorm, &QPushButton::clicked, this, &FenPrincipale::NormalSet);
     connect(ButtonColor, &QPushButton::clicked, this, &FenPrincipale::changer_couleur);
     connect(ButtonItal, &QPushButton::clicked, this, &FenPrincipale::mettreEnItalique);
-    connect(ButtonSoul, &QPushButton::clicked, this, &FenPrincipale::mettreEnSouligné);
+    connect(ButtonSoul, &QPushButton::clicked, this, &FenPrincipale::mettreEnSouligne);
 
 }
 
