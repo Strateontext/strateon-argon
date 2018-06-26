@@ -3,9 +3,6 @@
 #include <QWebEngineView>
 
 
-
-
-
 FenPrincipale::FenPrincipale()
 {
 
@@ -29,45 +26,57 @@ FenPrincipale::FenPrincipale()
     UrlLoad->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
 
 
-    ButtonSave->setIcon(QIcon("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/icones/save.png"));
+    ButtonSave->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/save.png"));
     ButtonSave->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonSave->setIconSize(QSize(25, 25));
 
-    ButtonQuit->setIcon(QIcon("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/icones/close.png"));
+    ButtonQuit->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/close.png")));
     ButtonQuit->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonQuit->setIconSize(QSize(25, 25));
 
-    ButtonOpen->setIcon(QIcon("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/icones/open-file.png"));
+    ButtonOpen->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/open.png"));
     ButtonOpen->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonOpen->setIconSize(QSize(25, 25));
 
-    ButtonWindow->setIcon(QIcon("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/icones/new-window.png"));
+    ButtonWindow->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/newwin.png"));
     ButtonWindow->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonWindow->setIconSize(QSize(25, 25));
 
-    ButtonGras->setIcon(QIcon("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/icones/icons8-bold-filled-50.png"));
+    ButtonGras->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/bold.png"));
     ButtonGras->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonGras->setIconSize(QSize(25, 25));
 
-    ButtonNorm->setIcon(QIcon("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/icones/icons8-typography-24.png"));
+    ButtonNorm->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/normal.png"));
     ButtonNorm->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonNorm->setIconSize(QSize(25, 25));
 
-    ButtonItal->setIcon(QIcon("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/icones/icons8-italic-24.png"));
+    ButtonItal->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/italic.png"));
     ButtonItal->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonItal->setIconSize(QSize(25, 25));
 
-    ButtonSize->setIcon(QIcon("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/icones/icons8-lowercase-32.png"));
+    ButtonSize->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/size.png"));
     ButtonSize->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonSize->setIconSize(QSize(25, 25));
 
-    ButtonSoul->setIcon(QIcon("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/icones/icons8-underline-24.png"));
+    ButtonSoul->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/underline.png"));
     ButtonSoul->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonSoul->setIconSize(QSize(25, 25));
 
-    ButtonColor->setIcon(QIcon("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/icones/RGB_Circle_1-80_icon-icons.com_57282.png"));
+    ButtonColor->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/color.png"));
     ButtonColor->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonColor->setIconSize(QSize(25, 25));
+    
+    /*ButtonColor->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/color.png"));
+    ButtonColor->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
+    ButtonColor->setIconSize(QSize(25, 25));
+    
+    ButtonColor->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/color.png"));
+    ButtonColor->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
+    ButtonColor->setIconSize(QSize(25, 25));
+    
+    ButtonColor->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/color.png"));
+    ButtonColor->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
+    ButtonColor->setIconSize(QSize(25, 25));*/
 
 
 
@@ -79,11 +88,7 @@ FenPrincipale::FenPrincipale()
     progression->setMinimumHeight(20);
 
 
-    /*m_fButton = new FloatingButton();
-    QMdiSubWindow *SubWindowMake = CentralZone->addSubWindow(m_fButton);
-    m_fButton->show();*/
-
-    QImage img("/Users/LaurentBESSEL/Desktop/build-Editeo-Desktop_Qt_5_10_1_clang_64bit-Debug/background.png");
+    QImage img(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/color.png");
     CentralZone->setBackground(QBrush(img));
 
     setCentralWidget(CentralZone);
