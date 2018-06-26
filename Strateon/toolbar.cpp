@@ -21,9 +21,9 @@ void FenPrincipale::ToolBarCreate() {
     ButtonItal = new QPushButton("", this);
     ButtonSoul = new QPushButton("", this);
     ButtonSize = new QPushButton("", this);
-    ButtonRenderWindow = new QPushButton("New Html View", this);
-    Buttonhtmlview = new QPushButton("Html Open", this);
-    UrlLoad = new QPushButton("URL Load", this);
+    ButtonRenderWindow = new QPushButton("", this);
+    Buttonhtmlview = new QPushButton("", this);
+    UrlLoad = new QPushButton("", this);
     PoliceChoice = new QFontComboBox;
     progression = new QProgressBar;
     sizeslider = new QSlider(Qt::Horizontal);
