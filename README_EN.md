@@ -24,4 +24,4 @@ So, I hope that I don't forgot somethink, if you want to ask me some questions o
 Ih hope that you will enjoy this project.
 More photographies in the FR README.
 
-The last Windows version here : https://drive.google.com/open?id=159Ke6IfKn7jelx5l9vzEpbf3Zzlak2Hu
+The last Windows version here : http://www.mediafire.com/file/hw6299a109u4ks6/windows.zip
