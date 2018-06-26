@@ -15,7 +15,7 @@ void FenPrincipale::NormalSet()
    TextWindow->setFontItalic(0);
 }
 
-void FenPrincipale::mettreEnSouligné()
+void FenPrincipale::mettreEnSouligne()
 {
    TextWindow->setFontUnderline(1);
 }
