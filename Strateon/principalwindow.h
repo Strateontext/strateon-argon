@@ -66,6 +66,7 @@ class FenPrincipale : public QMainWindow
     QPushButton *UrlLoad;
     QProgressBar *progression;
     Highlighter *highlighter;
+    HighlighterHtml *highlighter2;
     QSlider *slider;
     QSlider *sizeslider;
 

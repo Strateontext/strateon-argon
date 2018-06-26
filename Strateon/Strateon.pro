@@ -10,7 +10,8 @@ SOURCES += \
     toolbar.cpp \
     menubar.cpp \
     navigator.cpp \
-    syntaxic_coloration.cpp
+    syntaxic_coloration_html.cpp \
+    syntaxic_coloration_c.cpp.cpp
 
 HEADERS += \
     principalwindow.h \

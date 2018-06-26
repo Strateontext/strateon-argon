@@ -38,7 +38,8 @@ void FenPrincipale::SecondWindow() {
     SubWindowMake->setWindowTitle("fenêtre");
     SubWindowMake->setMinimumHeight(623);
     SubWindowMake->setMinimumWidth(803);
-    highlighter = new Highlighter(TextWindow->document());
+    //highlighter = new Highlighter(TextWindow->document());
+    highlighter2 = new HighlighterHtml(TextWindow->document());
     slider->setValue(61);
     slider->setValue(60);
     sizeslider->setValue(21);
