@@ -66,17 +66,17 @@ FenPrincipale::FenPrincipale()
     ButtonColor->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonColor->setIconSize(QSize(25, 25));
     
-    /*ButtonColor->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/color.png"));
-    ButtonColor->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
-    ButtonColor->setIconSize(QSize(25, 25));
+    ButtonRenderWindow->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/browsewin.png"));
+    ButtonRenderWindow->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
+    ButtonRenderWindow->setIconSize(QSize(25, 25));
     
-    ButtonColor->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/color.png"));
-    ButtonColor->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
-    ButtonColor->setIconSize(QSize(25, 25));
+    Buttonhtmlview->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/htmlopen.png"));
+    Buttonhtmlview->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
+    Buttonhtmlview->setIconSize(QSize(25, 25));
     
-    ButtonColor->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/color.png"));
-    ButtonColor->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
-    ButtonColor->setIconSize(QSize(25, 25));*/
+    UrlLoad->setIcon(QIcon(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+ "/Users/LaurentBESSEL/Desktop/Strateon/icons/urlopen.png"));
+    UrlLoad->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
+    UrlLoad->setIconSize(QSize(25, 25));
 
 
 
