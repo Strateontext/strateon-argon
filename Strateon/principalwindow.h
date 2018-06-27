@@ -29,6 +29,7 @@ class FenPrincipale : public QMainWindow
     void MenuFuction();
     void OpacitySlider(int);
     void GestionTaille(int);
+    void printfile();
 
     private:
     QMdiArea* CentralZone;
