@@ -54,6 +54,14 @@ void FenPrincipale::OpacitySlider(int value) {
 
 }
 
+void FenPrincipale::printfile()
+{
+    QPrinter * impimante = new QPrinter;
+    QPrintDialog * dialogue = new QPrintDialog(imprimante, this);
+ 
+    if(dialogue->exec() == QDialog::Accepted)
+        texte->print(imprimante);
+}
 
 
 
