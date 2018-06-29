@@ -23,6 +23,6 @@ int main(int argc, char *argv[])
     fenetre.setMinimumSize(1000,562.5);
     fenetre.setMaximumSize(1920,1080);
     fenetre.show();
-    app.setStyleSheet(":/files/style");
+    //app.setStyleSheet(":/files/style");
     return app.exec();
 }
