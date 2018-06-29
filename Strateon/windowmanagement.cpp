@@ -4,6 +4,14 @@
 
 void FenPrincipale::SavingText()
     {
+       if (CentralZone->subWindowList().isEmpty()){
+        errordialog = new QMessageBox;
+        errordialog->setText("Vous devez d'abord créer une fenêtre !");
+        errordialog->setIcon(QMessageBox::Warning);
+        errordialog->show();
+    }
+    else
+    {
         SecondWindow();
         QString texteEnHtml = TextWindow->toHtml();
         QString nomFichier = QFileDialog::getSaveFileName(this, "Enregistrer...", "Sans titre 1.txt");
@@ -20,6 +28,14 @@ void FenPrincipale::SavingText()
 
 void FenPrincipale::ouvrir()
 {
+       if (CentralZone->subWindowList().isEmpty()){
+        errordialog = new QMessageBox;
+        errordialog->setText("Vous devez d'abord créer une fenêtre !");
+        errordialog->setIcon(QMessageBox::Warning);
+        errordialog->show();
+    }
+    else
+    {
     SecondWindow();
     QString nomFichier = QFileDialog::getOpenFileName(this, "Ouvrir un fichier", QString());
     QFile fichier(nomFichier);
@@ -27,6 +43,7 @@ void FenPrincipale::ouvrir()
     {
         TextWindow->setText(fichier.readAll());
         setWindowTitle(nomFichier + " - Strateon V1 - Argon ");
+    }
     }
 }
 
@@ -49,18 +66,36 @@ void FenPrincipale::SecondWindow() {
 
 void FenPrincipale::OpacitySlider(int value) {
 
+       if (CentralZone->subWindowList().isEmpty()){
+        errordialog = new QMessageBox;
+        errordialog->setText("Vous devez d'abord créer une fenêtre !");
+        errordialog->setIcon(QMessageBox::Warning);
+        errordialog->show();
+    }
+    else
+    {
     int valeur = value*100/200;
     SubWindowMake->setStyleSheet(QString{"background-color: rgba(255, 255, 255, "} + QString::number(valeur) + "%); border: 1px solid grey; border-radius: 4px");
-
+    }
+        
 }
 
 void FenPrincipale::printfile()
 {
+       if (CentralZone->subWindowList().isEmpty()){
+        errordialog = new QMessageBox;
+        errordialog->setText("Vous devez d'abord créer une fenêtre !");
+        errordialog->setIcon(QMessageBox::Warning);
+        errordialog->show();
+    }
+    else
+    {
     QPrinter * impimante = new QPrinter;
     QPrintDialog * dialogue = new QPrintDialog(imprimante, this);
  
     if(dialogue->exec() == QDialog::Accepted)
         texte->print(imprimante);
+    }
 }
 
 
