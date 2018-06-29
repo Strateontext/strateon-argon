@@ -1,6 +1,5 @@
 #include "principalwindow.h"
 #include <iostream>
-#include <QWebEngineView>
 
 
 FenPrincipale::FenPrincipale()
@@ -18,12 +17,6 @@ FenPrincipale::FenPrincipale()
 
 
     progression->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
-
-    ButtonRenderWindow->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
-
-    Buttonhtmlview->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
-
-    UrlLoad->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
 
     ButtonSave->setIcon(QIcon(":/icons/save"));
     ButtonSave->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
@@ -53,9 +46,6 @@ FenPrincipale::FenPrincipale()
     ButtonItal->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonItal->setIconSize(QSize(25, 25));
 
-    ButtonSize->setIcon(QIcon(":/icons/size"));
-    ButtonSize->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
-    ButtonSize->setIconSize(QSize(25, 25));
 
     ButtonSoul->setIcon(QIcon(":/icons/underline"));
     ButtonSoul->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
@@ -64,16 +54,11 @@ FenPrincipale::FenPrincipale()
     ButtonColor->setIcon(QIcon(":/icons/color"));
     ButtonColor->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     ButtonColor->setIconSize(QSize(25, 25));
-    
-    ButtonRenderWindow->setIcon(QIcon(":/icons/browsewin"));
-    ButtonRenderWindow->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
-    ButtonRenderWindow->setIconSize(QSize(25, 25));
-    
-    Buttonhtmlview->setIcon(QIcon(":/icons/htmlopen"));
-    Buttonhtmlview->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
-    Buttonhtmlview->setIconSize(QSize(25, 25));
 
-
+    
+    Printer->setIcon(QIcon(":/icons/printer"));
+    Printer->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
+    Printer->setIconSize(QSize(25, 25));
 
 
     PoliceChoice->setMinimumWidth(350);
@@ -81,7 +66,7 @@ FenPrincipale::FenPrincipale()
     PoliceChoice->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     toolBar->setMinimumHeight(70);
     progression->setMaximumWidth(100);
-    progression->setMinimumHeight(20);
+    progression->setMinimumHeight(40);
 
 
     QImage img(":/images/background");
