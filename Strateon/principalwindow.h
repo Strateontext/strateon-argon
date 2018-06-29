@@ -19,12 +19,10 @@ class FenPrincipale : public QMainWindow
     void changer_couleur();
     void mettreEnSouligne();
     void mettreEnItalique();
-    //void GestionTaille();
     void ouvrir();
     void fontChanged();
     void RenderWindow();
     void openhtml();
-    void SetUrl();
     void ToolBarCreate();
     void MenuFuction();
     void OpacitySlider(int);
@@ -40,8 +38,6 @@ class FenPrincipale : public QMainWindow
     QFontComboBox *PoliceChoice;
     QWebEngineView  *view;
     QUrl *nomFichier;
-    QLineEdit *UrlEdit;
-    QUrl *UrlSearch;
     QPushButton *floatbut;
     QMenu *File;
     //-------------------------------------------------
@@ -64,7 +60,6 @@ class FenPrincipale : public QMainWindow
     QPushButton *ButtonSize;
     QPushButton *ButtonRenderWindow;
     QPushButton *Buttonhtmlview;
-    QPushButton *UrlLoad;
     QProgressBar *progression;
     Highlighter *highlighter;
     HighlighterHtml *highlighter2;
