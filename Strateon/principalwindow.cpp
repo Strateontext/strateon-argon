@@ -72,10 +72,7 @@ FenPrincipale::FenPrincipale()
     Buttonhtmlview->setIcon(QIcon(":/icons/htmlopen"));
     Buttonhtmlview->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
     Buttonhtmlview->setIconSize(QSize(25, 25));
-    
-    UrlLoad->setIcon(QIcon(":/icons/urlopen"));
-    UrlLoad->setStyleSheet("background: white; border: 1px solid grey; border-radius: 4px; padding: 3px; margin: 10px ");
-    UrlLoad->setIconSize(QSize(25, 25));
+
 
 
 
