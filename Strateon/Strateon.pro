@@ -1,5 +1,4 @@
 QT += widgets
-QT += webenginewidgets
 QT += gui
 
 SOURCES += \
