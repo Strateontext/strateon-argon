@@ -41,3 +41,5 @@ Les premières fonctionnalités :
 
 
 La dernière version pour Windows : http://www.mediafire.com/file/hw6299a109u4ks6/windows.zip
+
+Vous pouvez aussi check le serveur discord ici : https://discord.gg/tRHGaMX
